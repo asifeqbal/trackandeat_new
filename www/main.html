@@ -89,14 +89,14 @@
 					push.on('registration', function(data) {
 						deviceId = data.registrationId;
 					//	document.getElementById('container-frame').src = 'https://www.trackandeat.com/index.php?devType=Android&deviceId='+deviceId;
-						document.getElementById('container-frame').src = 'https://www.trackandeat.com';
+						document.getElementById('container-frame').src = 'http://typo3.vrisini.com/fabdyl';
 						alert('id:' +  deviceId );	
 										
 					}); 
 					
 					push.on('error', function(e) {
 						notificationFlag = false;
-						document.getElementById('container-frame').src = 'https://www.trackandeat.com';
+						document.getElementById('container-frame').src = 'http://typo3.vrisini.com/fabdyl';
 						
 					}); 
 					push.on('notification', function(data) {
