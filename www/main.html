@@ -74,7 +74,7 @@
 					document.getElementById('blanker').style.display = 'none'; 
 					break;
 				case 'ptintThings':
-					cordova.plugins.printer.print(args.contents,{ name:'Document.html', landscape:true } ,function () {
+					cordova.plugins.printer.print(args.contents,'Document.html' ,function () {
 						alert('printing finished or canceled')
 					});
 					break;
