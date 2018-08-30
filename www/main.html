@@ -82,17 +82,17 @@
 				}, 2000);
 				*/
 			
-			alert('id:' +  deviceId );
+			
 			
 		
-		//alert('Welcome');
+		
 		
 				var push = PushNotification.init({ "android": {"senderID": "460557973166"},
 					"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 					push.on('registration', function(data) {
 						deviceId = data.registrationId;
 						document.getElementById('container-frame').src = 'https://www.trackandeat.com/index.php?devType=Android&deviceId='+deviceId;
-						alert('id:' +  deviceId );	
+						
 										
 					}); 
 					
