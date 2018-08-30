@@ -22,6 +22,9 @@
     },
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.trackandeat.app"
+    },
+    "cordova-plugin-printer": {
+      "PACKAGE_NAME": "com.trackandeat.app"
     }
   },
   "dependent_plugins": {}
