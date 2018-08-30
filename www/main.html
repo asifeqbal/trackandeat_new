@@ -65,12 +65,18 @@
 			document.getElementById('blanker').style.display = 'none';
 		}
 		var receiveMessage = function receiveMessage(e){
-			switch (e.data) {
+			var args = e.data;
+			switch (args.task) {
 				case 'setBlanker':
 					document.getElementById('blanker').style.display = 'block';
 					break;
 				case 'removeBlanker':
 					document.getElementById('blanker').style.display = 'none'; 
+					break;
+				case 'ptintThings':
+					cordova.plugins.printer.print(args.contents,{ name:'Document.html', landscape:true } ,function () {
+						alert('printing finished or canceled')
+					});
 					break;
 			}
 		};
