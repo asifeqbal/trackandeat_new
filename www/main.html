@@ -100,7 +100,17 @@
 				}, 2000);
 				*/
 			
-			
+			cordova.plugins.barcodeScanner.scan(result, error );
+								function result(){
+										  alert("We got a barcode\n" +
+												"Result: " + result.text + "\n" +
+												"Format: " + result.format + "\n" +
+												"Cancelled: " + result.cancelled);
+												var win = window.frames['container-frame'];
+									  }
+								function error() {
+									  alert("Scanning failed: " + error);
+								  }
 			
 		
 		
