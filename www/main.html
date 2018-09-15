@@ -95,11 +95,7 @@
 		window.addEventListener("message", receiveMessage, false);		
 		
 		function onDeviceReady() {
-			/*	setTimeout(function() {
-				navigator.splashscreen.hide();
-				}, 2000);
-				*/
-			
+			alert('hello');			
 			cordova.plugins.barcodeScanner.scan(result, error );
 								function result(){
 										  alert("We got a barcode\n" +
