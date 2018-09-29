@@ -94,32 +94,7 @@
 					break;
 			}
 		};
-		window.addEventListener("message", receiveMessage, false);	
-
-
-	function downloadFile() {
-	   var fileTransfer = new FileTransfer();
-	   var uri = encodeURI("http://s14.postimg.org/i8qvaxyup/bitcoin1.jpg");
-	   var fileURL =  "///storage/emulated/0/DCIM/myFile";
-
-	   fileTransfer.download(
-	      uri, fileURL, function(entry) {
-	         console.log("download complete: " + entry.toURL());
-	      },
-			
-	      function(error) {
-	         console.log("download error source " + error.source);
-	         console.log("download error target " + error.target);
-	         console.log("download error code" + error.code);
-	      },
-			
-	      false, {
-	         headers: {
-	            "Authorization": "Basic dGVzdHVzZXJuYW1lOnRlc3RwYXNzd29yZA=="
-	         }
-	      }
-	   );
-	}	
+		window.addEventListener("message", receiveMessage, false);		
 		
 		function onDeviceReady() {
 			alert('hello');			
@@ -135,8 +110,7 @@
 			// 						  alert("Scanning failed: " + error);
 			// 					  }
 			
-	document.getElementById("uploadFile").addEventListener("click", uploadFile);
-	document.getElementById("downloadFile").addEventListener("click", downloadFile);
+		
 		
 		
 				var push = PushNotification.init({ "android": {"senderID": "460557973166"},
