@@ -28,7 +28,6 @@
             </intent-filter>
         </service>
         <service android:exported="false" android:name="com.adobe.phonegap.push.RegistrationIntentService" />
-        <activity android:exported="false" android:label="Printer" android:name="de.appplant.cordova.plugin.printer.ui.SelectPrinterActivity" />
         <activity android:clearTaskOnLaunch="true" android:configChanges="orientation|keyboardHidden|screenSize" android:exported="false" android:name="com.google.zxing.client.android.CaptureActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:label="Share" android:name="com.google.zxing.client.android.encode.EncodeActivity" />
     </application>

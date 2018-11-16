@@ -57,9 +57,6 @@
     <feature name="Geolocation">
         <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
     </feature>
-    <feature name="Printer">
-        <param name="android-package" value="de.appplant.cordova.plugin.printer.Printer" />
-    </feature>
     <feature name="BarcodeScanner">
         <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
     </feature>

@@ -48,15 +48,6 @@ module.exports = [
     "runs": true
   },
   {
-    "id": "cordova-plugin-printer.Printer",
-    "file": "plugins/cordova-plugin-printer/www/printer.js",
-    "pluginId": "cordova-plugin-printer",
-    "clobbers": [
-      "plugin.printer",
-      "cordova.plugins.printer"
-    ]
-  },
-  {
     "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
     "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
     "pluginId": "phonegap-plugin-barcodescanner",
@@ -262,7 +253,6 @@ module.exports.metadata =
   "cordova-plugin-network-information": "2.0.1",
   "cordova-plugin-splashscreen": "5.0.2",
   "cordova-plugin-geolocation": "4.0.1",
-  "cordova-plugin-printer": "0.7.3",
   "phonegap-plugin-barcodescanner": "8.0.0",
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-file-transfer": "1.7.1"
