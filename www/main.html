@@ -49,8 +49,8 @@
 <body>	
 	<div id="blanker"></div>
 	<div id="offline-screen"></div>
-	<button id = "uploadFile">UPLOAD</button>
-	<button id = "downloadFile">DOWNLOAD</button>
+	<!-- <button id = "uploadFile">UPLOAD</button> -->
+	<!-- <button id = "downloadFile">DOWNLOAD</button> -->
 	<div class="social-button-facebook button_inline" onclick="browse();"></div>
 	
 	<iframe src="https://www.trackandeat.com/index.php?devType=Android" name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="border:none; position:absolute;"></iframe>
@@ -97,7 +97,8 @@
 		window.addEventListener("message", receiveMessage, false);		
 		
 		function onDeviceReady() {
-			alert('hello');			
+			alert('hello');	
+			alert("device first ID:\n" +deviceId);			
 			// cordova.plugins.barcodeScanner.scan(result, error );
 			// 					function result(){
 			// 							  alert("We got a barcode\n" +
@@ -117,6 +118,7 @@
 					"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 					push.on('registration', function(data) {
 						deviceId = data.registrationId;
+						alert("device ID:\n" +deviceId);
 						document.getElementById('container-frame').src = 'https://www.trackandeat.com/index.php?devType=Android&deviceId='+deviceId;
 						
 										
